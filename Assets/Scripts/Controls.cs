@@ -22,8 +22,11 @@ public class Controls : MonoBehaviour
 
         if (Input.GetKeyDown (KeyCode.W))
         {
-            mileage -= 1;
-            rigid.AddForce(new Vector2 (0f, upFloat));
+            if (mileage > 0)
+            {
+                mileage -= 1;
+                rigid.AddForce(new Vector2(0f, upFloat));
+            }
         }
 
         if (Input.GetKey (KeyCode.D))
