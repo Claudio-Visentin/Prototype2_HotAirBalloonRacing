@@ -19,6 +19,7 @@ public class Controls : MonoBehaviour
     void FixedUpdate()
     {
         print(rigid.velocity.magnitude);
+
         if (Input.GetKeyDown (KeyCode.W))
         {
             mileage -= 1;
