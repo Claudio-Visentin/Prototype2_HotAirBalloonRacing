@@ -17,8 +17,8 @@ public class UI : MonoBehaviour
     void Update()
     {
         P1Health.text = P1.health + "";
-       // P2Health.text = P2.health + "";
+        P2Health.text = P2.health + "";
         P1Slider.value = P1.health;
-       // P2Slider.value = P2.health;
+        P2Slider.value = P2.health;
     }
 }
