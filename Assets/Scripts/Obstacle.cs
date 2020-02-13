@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
@@ -9,10 +7,12 @@ public class Obstacle : MonoBehaviour
         if (other.gameObject.CompareTag ("Player1"))
         {
             other.gameObject.GetComponent<Controls>().maxSpeed -= 5;
+            other.gameObject.GetComponent<Controls>().modifier = 2;
         }
         if (other.gameObject.CompareTag("Player2"))
         {
             other.gameObject.GetComponent<Controls>().maxSpeed -= 5;
+            other.gameObject.GetComponent<Controls>().modifier = 1;
         }
     }
 
@@ -21,10 +21,24 @@ public class Obstacle : MonoBehaviour
         if (other.gameObject.CompareTag("Player1"))
         {
             other.gameObject.GetComponent<Controls>().maxSpeed += 5;
+            other.gameObject.GetComponent<Controls>().modifier = 2;
         }
         if (other.gameObject.CompareTag("Player2"))
         {
             other.gameObject.GetComponent<Controls>().maxSpeed += 5;
+            other.gameObject.GetComponent<Controls>().modifier = 1;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player1"))
+        {
+            other.gameObject.GetComponent<Controls>().health -= 1;
+        }
+        if (other.gameObject.CompareTag("Player2"))
+        {
+            other.gameObject.GetComponent<Controls>().health -= 1;
         }
     }
 }

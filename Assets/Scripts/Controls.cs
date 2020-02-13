@@ -8,6 +8,7 @@ public class Controls : MonoBehaviour
     public float mileage = 10;
     public Rigidbody2D rigid;
     public int health;
+    public int modifier = 1;
 
     public bool player1;
     public bool player2;
@@ -39,7 +40,7 @@ public class Controls : MonoBehaviour
             else if (rigid.velocity.x > maxSpeed)
             {
                 float difference = rigid.velocity.x - maxSpeed;
-                rigid.AddForce (new Vector2 (-difference, 0));
+                rigid.AddForce (new Vector2 (-difference * modifier, 0));
             }
         }
 
@@ -52,7 +53,7 @@ public class Controls : MonoBehaviour
                 else if (rigid.velocity.x < -maxSpeed)
                 {
                     float difference = maxSpeed - rigid.velocity.x;
-                    rigid.AddForce(new Vector2(difference, 0));
+                    rigid.AddForce(new Vector2(difference * modifier, 0));
                 }
             }
         }
@@ -77,7 +78,7 @@ public class Controls : MonoBehaviour
                 else if (rigid.velocity.x > maxSpeed)
                 {
                     float difference = rigid.velocity.x - maxSpeed;
-                    rigid.AddForce(new Vector2(-difference, 0));
+                    rigid.AddForce(new Vector2(-difference * modifier, 0));
                 }
             }
 
@@ -90,7 +91,7 @@ public class Controls : MonoBehaviour
                 else if (rigid.velocity.x < -maxSpeed)
                 {
                     float difference = maxSpeed - rigid.velocity.x;
-                    rigid.AddForce(new Vector2(difference, 0));
+                    rigid.AddForce(new Vector2(difference * modifier, 0));
                 }
             }
         }
