@@ -19,10 +19,9 @@ public class Controls : MonoBehaviour
 
     void FixedUpdate()
     {
-
-        if (player1 == true) { 
-
-        if (Input.GetKeyDown (KeyCode.W))
+        if (player1 == true) {
+            print(maxSpeed);
+            if (Input.GetKeyDown (KeyCode.W))
         {
             if (mileage > 0)
             {

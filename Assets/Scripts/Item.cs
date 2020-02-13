@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
@@ -18,7 +17,7 @@ public class Item : MonoBehaviour
             if (healthChange == true)
             {
                 PlayerCaught.GetComponent<Controls>().health += healthDifference;
-                Destroy(this);
+                Destroy(gameObject);
             }
             if (speedChange == true)
             {
@@ -33,7 +32,7 @@ public class Item : MonoBehaviour
             if (healthChange == true)
             {
                 PlayerCaught.GetComponent<Controls>().health += healthDifference;
-                Destroy(this);
+                Destroy(gameObject);
             }
             if (speedChange == true)
             {
@@ -44,7 +43,7 @@ public class Item : MonoBehaviour
 
     IEnumerator SpeedChange ()
     {
-        gameObject.GetComponent<Image>().enabled = false;
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         PlayerCaught.GetComponent<Controls>().maxSpeed += speedChangeAmount;
         yield return new WaitForSeconds(2f);

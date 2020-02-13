@@ -8,11 +8,11 @@ public class Obstacle : MonoBehaviour
     {
         if (other.gameObject.CompareTag ("Player1"))
         {
-            other.gameObject.GetComponent<Controls>().maxSpeed -= 2;
+            other.gameObject.GetComponent<Controls>().maxSpeed -= 5;
         }
         if (other.gameObject.CompareTag("Player2"))
         {
-            other.gameObject.GetComponent<Controls>().maxSpeed -= 2;
+            other.gameObject.GetComponent<Controls>().maxSpeed -= 5;
         }
     }
 
@@ -20,11 +20,11 @@ public class Obstacle : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player1"))
         {
-            other.gameObject.GetComponent<Controls>().maxSpeed += 2;
+            other.gameObject.GetComponent<Controls>().maxSpeed += 5;
         }
         if (other.gameObject.CompareTag("Player2"))
         {
-            other.gameObject.GetComponent<Controls>().maxSpeed += 2;
+            other.gameObject.GetComponent<Controls>().maxSpeed += 5;
         }
     }
 }
