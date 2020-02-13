@@ -10,7 +10,7 @@ public class Item : MonoBehaviour
     public int speedChangeAmount;
     GameObject PlayerCaught;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D (Collider2D other)
     {
         if (other.gameObject.CompareTag ("Player1"))
         {
