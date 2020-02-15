@@ -18,7 +18,7 @@ public class Controls : MonoBehaviour
         
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (player1 == true) {
             print(maxSpeed);
