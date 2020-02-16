@@ -3,11 +3,11 @@
 public class Controls : MonoBehaviour
 {
     public float maxSpeed;
+    public float maxSpeedY;
     public float acceleration;
     public float upFloat;
-    public float mileage = 10;
     public Rigidbody2D rigid;
-    public int health;
+    public int health = 1000;
     public int modifier = 1;
 
     public bool player1;
@@ -17,7 +17,7 @@ public class Controls : MonoBehaviour
     public void RaceStart()
     {
         rigid.gravityScale = 0.3f;
-        rigid.AddForce(new Vector2 (20000f, 0f));
+        rigid.AddForce(new Vector2 (9000f, 0f));
         cancontrol = true;
     }
 
@@ -25,15 +25,19 @@ public class Controls : MonoBehaviour
     {
         if (cancontrol == true) { 
         if (player1 == true) {
-            print(maxSpeed);
-            if (Input.GetKeyDown (KeyCode.W))
-        {
-            if (mileage > 0)
-            {
-                mileage -= 1;
-                rigid.AddForce(new Vector2(0f, upFloat));
-            }
-        }
+            if (Input.GetKey (KeyCode.W) && health >= 0)
+             {
+                    health -= 1;
+                    if (rigid.velocity.y < maxSpeedY)
+                    {
+                        rigid.AddForce(new Vector2(0f, upFloat));
+                    }
+                    else if (rigid.velocity.x > maxSpeed)
+                    {
+                        float difference = rigid.velocity.y - maxSpeedY;
+                        rigid.AddForce(new Vector2(0, -difference * modifier));
+                    }
+                }
 
         if (Input.GetKey (KeyCode.D))
         {
@@ -64,12 +68,17 @@ public class Controls : MonoBehaviour
             if (player2 == true)
             {
 
-                if (Input.GetKeyDown(KeyCode.UpArrow))
+                if (Input.GetKey(KeyCode.UpArrow) && health >= 0)
                 {
-                    if (mileage > 0)
+                    health -= 1;
+                    if (rigid.velocity.y < maxSpeedY)
                     {
-                        mileage -= 1;
                         rigid.AddForce(new Vector2(0f, upFloat));
+                    }
+                    else if (rigid.velocity.x > maxSpeed)
+                    {
+                        float difference = rigid.velocity.y - maxSpeedY;
+                        rigid.AddForce(new Vector2(0, -difference * modifier));
                     }
                 }
 
