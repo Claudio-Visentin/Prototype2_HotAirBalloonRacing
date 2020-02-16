@@ -16,7 +16,7 @@ public class Controls : MonoBehaviour
 
     public void RaceStart()
     {
-        rigid.gravityScale = 0.3f;
+        rigid.gravityScale = 1.2f;
         rigid.AddForce(new Vector2 (9000f, 0f));
         cancontrol = true;
     }
