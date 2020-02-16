@@ -644,6 +644,11 @@ PrefabInstance:
       propertyPath: m_Targets.Array.data[1].target
       value: 
       objectReference: {fileID: 7836019462740111884}
+    - target: {fileID: 1438102895102092486, guid: 20b814a9cd5a0a24c9f27b631c512165,
+        type: 3}
+      propertyPath: m_UpdateMethod
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1438102895102092487, guid: 20b814a9cd5a0a24c9f27b631c512165,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5012,6 +5017,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CM vcam1
       objectReference: {fileID: 0}
+    - target: {fileID: 192346202756389990, guid: 84755dadc2493dc4ba2cac9e13c5529e,
+        type: 3}
+      propertyPath: m_BindingMode
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2374524058400468175, guid: 84755dadc2493dc4ba2cac9e13c5529e,
         type: 3}
       propertyPath: m_LookAt
@@ -5031,6 +5041,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_MinimumDistance
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5875667776452537811, guid: 84755dadc2493dc4ba2cac9e13c5529e,
+        type: 3}
+      propertyPath: m_LookaheadSmoothing
+      value: 18.2
       objectReference: {fileID: 0}
     - target: {fileID: 6260651865292180466, guid: 84755dadc2493dc4ba2cac9e13c5529e,
         type: 3}
@@ -5087,7 +5102,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2873132577707330249, guid: 84755dadc2493dc4ba2cac9e13c5529e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 84755dadc2493dc4ba2cac9e13c5529e, type: 3}
 --- !u!114 &7836019462171004020
 MonoBehaviour:
@@ -5508,7 +5524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c75f49384bb9d54e96ff6ffa6d65d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
+  maxSpeed: 30
   maxSpeedY: 10
   acceleration: 150
   upFloat: 2000
@@ -6277,7 +6293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c75f49384bb9d54e96ff6ffa6d65d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
+  maxSpeed: 30
   maxSpeedY: 10
   acceleration: 150
   upFloat: 2000
