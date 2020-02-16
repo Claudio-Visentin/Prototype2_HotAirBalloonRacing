@@ -1,6 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class UI : MonoBehaviour
 {
@@ -14,16 +15,32 @@ public class UI : MonoBehaviour
     public Slider P1Slider;
     public Slider P2Slider;
 
-    public TextMeshProUGUI mileage1;
-    public TextMeshProUGUI mileage2;
+    public TextMeshProUGUI introtext;
 
+
+    private void Awake()
+    {
+        StartCoroutine("LevelIntro");
+    }
+
+    IEnumerator LevelIntro ()
+    {
+        introtext.text = "3";
+        yield return new WaitForSecondsRealtime(0.8f);
+        introtext.text = "2";
+        yield return new WaitForSecondsRealtime(0.8f);
+        introtext.text = "1";
+        yield return new WaitForSecondsRealtime(0.8f);
+        introtext.gameObject.SetActive(false);
+        P1.RaceStart();
+        P2.RaceStart();
+    }
     void Update()
     {
         P1Health.text = P1.health + "";
         P2Health.text = P2.health + "";
         P1Slider.value = P1.health;
         P2Slider.value = P2.health;
-        mileage1.text = "Mileage: " + P1.mileage + "";
-        mileage2.text = "Mileage: " + P2.mileage + "";
+
     }
 }

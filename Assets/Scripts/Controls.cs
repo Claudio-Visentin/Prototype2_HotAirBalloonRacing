@@ -12,14 +12,18 @@ public class Controls : MonoBehaviour
 
     public bool player1;
     public bool player2;
+    public bool cancontrol = false;
 
-    void Start()
+    public void RaceStart()
     {
-        
+        rigid.gravityScale = 0.3f;
+        rigid.AddForce(new Vector2 (20000f, 0f));
+        cancontrol = true;
     }
 
     void Update()
     {
+        if (cancontrol == true) { 
         if (player1 == true) {
             print(maxSpeed);
             if (Input.GetKeyDown (KeyCode.W))
@@ -57,41 +61,42 @@ public class Controls : MonoBehaviour
                 }
             }
         }
-        if (player2 == true)
-        {
-
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (player2 == true)
             {
-                if (mileage > 0)
-                {
-                    mileage -= 1;
-                    rigid.AddForce(new Vector2(0f, upFloat));
-                }
-            }
 
-            if (Input.GetKey(KeyCode.RightArrow))
-            {
-                if (rigid.velocity.x < maxSpeed)
+                if (Input.GetKeyDown(KeyCode.UpArrow))
                 {
-                    rigid.AddForce(new Vector2(acceleration, 0f));
+                    if (mileage > 0)
+                    {
+                        mileage -= 1;
+                        rigid.AddForce(new Vector2(0f, upFloat));
+                    }
                 }
-                else if (rigid.velocity.x > maxSpeed)
-                {
-                    float difference = rigid.velocity.x - maxSpeed;
-                    rigid.AddForce(new Vector2(-difference * modifier, 0));
-                }
-            }
 
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                if (rigid.velocity.x > -maxSpeed)
+                if (Input.GetKey(KeyCode.RightArrow))
                 {
-                    rigid.AddForce(new Vector2(-acceleration, 0f));
+                    if (rigid.velocity.x < maxSpeed)
+                    {
+                        rigid.AddForce(new Vector2(acceleration, 0f));
+                    }
+                    else if (rigid.velocity.x > maxSpeed)
+                    {
+                        float difference = rigid.velocity.x - maxSpeed;
+                        rigid.AddForce(new Vector2(-difference * modifier, 0));
+                    }
                 }
-                else if (rigid.velocity.x < -maxSpeed)
+
+                if (Input.GetKey(KeyCode.LeftArrow))
                 {
-                    float difference = maxSpeed - rigid.velocity.x;
-                    rigid.AddForce(new Vector2(difference * modifier, 0));
+                    if (rigid.velocity.x > -maxSpeed)
+                    {
+                        rigid.AddForce(new Vector2(-acceleration, 0f));
+                    }
+                    else if (rigid.velocity.x < -maxSpeed)
+                    {
+                        float difference = maxSpeed - rigid.velocity.x;
+                        rigid.AddForce(new Vector2(difference * modifier, 0));
+                    }
                 }
             }
         }
