@@ -91,7 +91,7 @@ public class Controls : MonoBehaviour
             if (player2 == true)
             {
 
-                if (Input.GetKey(KeyCode.UpArrow) && health >= 0 )
+                if (Input.GetKey(KeyCode.UpArrow) && health >= 1 )
                 {
                     health -= 1;
                     if (rigid.velocity.y < maxSpeedY && outofbounds == false)
