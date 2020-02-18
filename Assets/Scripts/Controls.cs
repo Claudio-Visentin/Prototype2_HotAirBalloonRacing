@@ -51,11 +51,11 @@ public class Controls : MonoBehaviour
             if (Input.GetKey (KeyCode.W) && health >= 0)
              {
                     health -= 1;
-                    if (rigid.velocity.y < maxSpeedY)
+                    if (rigid.velocity.y < maxSpeedY && outofbounds == false)
                     {
                         rigid.AddForce(new Vector2(0f, upFloat));
                     }
-                    else if (rigid.velocity.x > maxSpeed)
+                    else if (rigid.velocity.y > maxSpeed)
                     {
                         float difference = rigid.velocity.y - maxSpeedY;
                         rigid.AddForce(new Vector2(0, -difference * modifier));
@@ -91,14 +91,14 @@ public class Controls : MonoBehaviour
             if (player2 == true)
             {
 
-                if (Input.GetKey(KeyCode.UpArrow) && health >= 0)
+                if (Input.GetKey(KeyCode.UpArrow) && health >= 0 )
                 {
                     health -= 1;
-                    if (rigid.velocity.y < maxSpeedY)
+                    if (rigid.velocity.y < maxSpeedY && outofbounds == false)
                     {
                         rigid.AddForce(new Vector2(0f, upFloat));
                     }
-                    else if (rigid.velocity.x > maxSpeed)
+                    else if (rigid.velocity.y > maxSpeed)
                     {
                         float difference = rigid.velocity.y - maxSpeedY;
                         rigid.AddForce(new Vector2(0, -difference * modifier));
