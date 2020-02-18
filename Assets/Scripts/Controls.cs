@@ -13,18 +13,32 @@ public class Controls : MonoBehaviour
     public bool player1;
     public bool player2;
     public bool cancontrol = false;
+    public bool outofbounds = false;
 
     public Animator anim;
+    bool startdone = false;
 
     public void RaceStart()
     {
         rigid.gravityScale = 1.4f;
-        rigid.AddForce(new Vector2 (9000f, 0f));
+        rigid.AddForce(new Vector2 (20000f, 0f));
         cancontrol = true;
+        startdone = true;
     }
 
     void Update()
     {
+        if (startdone == true)
+        {
+            if (outofbounds == true)
+            {
+                maxSpeedY = 0;
+            }
+            else
+            {
+                maxSpeedY = 15;
+            }
+        }
         if (cancontrol == true) { 
             if (rigid.velocity.y >= 1)
             {
