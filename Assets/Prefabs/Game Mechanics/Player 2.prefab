@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 8948140617266547697}
   - component: {fileID: 8948140617266547698}
   - component: {fileID: 8948140617266547215}
+  - component: {fileID: 1905459623}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Player2
@@ -379,6 +380,7 @@ MonoBehaviour:
   player1: 0
   player2: 1
   cancontrol: 0
+  anim: {fileID: 1905459623}
 --- !u!212 &8948140617266547215
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -429,3 +431,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1905459623
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8948140617266547699}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9928806fae38f5444b8abeffefa113e5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

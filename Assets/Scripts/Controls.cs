@@ -14,6 +14,8 @@ public class Controls : MonoBehaviour
     public bool player2;
     public bool cancontrol = false;
 
+    public Animator anim;
+
     public void RaceStart()
     {
         rigid.gravityScale = 1.4f;
@@ -24,6 +26,13 @@ public class Controls : MonoBehaviour
     void Update()
     {
         if (cancontrol == true) { 
+            if (rigid.velocity.y >= 1)
+            {
+                anim.SetBool("huff", true);
+            } else
+            {
+                anim.SetBool("huff", false);
+            }
         if (player1 == true) {
             if (Input.GetKey (KeyCode.W) && health >= 0)
              {
