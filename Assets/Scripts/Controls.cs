@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Controls : MonoBehaviour
 {
@@ -30,6 +31,10 @@ public class Controls : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown (KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Placeholder Level 1");
+        }
         if (health == 0)
         {
             transform.position = spawner.position;
