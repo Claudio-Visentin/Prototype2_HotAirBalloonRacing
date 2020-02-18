@@ -18,6 +18,8 @@ public class Controls : MonoBehaviour
     public Animator anim;
     bool startdone = false;
 
+    public Transform spawner;
+
     public void RaceStart()
     {
         rigid.gravityScale = 1.4f;
@@ -28,6 +30,11 @@ public class Controls : MonoBehaviour
 
     void Update()
     {
+        if (health == 0)
+        {
+            transform.position = spawner.position;
+            health = 500;
+        }
         if (startdone == true)
         {
             if (outofbounds == true)

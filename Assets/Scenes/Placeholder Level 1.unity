@@ -10841,6 +10841,11 @@ PrefabInstance:
       propertyPath: upFloat
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 8948140617266547698, guid: 7997b172fb0d7ba4189491a7e09594fb,
+        type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 767830882}
     - target: {fileID: 8948140617266547699, guid: 7997b172fb0d7ba4189491a7e09594fb,
         type: 3}
       propertyPath: m_Layer
@@ -21379,6 +21384,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1606902394}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &767830881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 767830882}
+  m_Layer: 8
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &767830882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767830881}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -92.23058, y: 20.5, z: -1.8672767}
+  m_LocalScale: {x: 3.3345008, y: 3.3345008, z: 3.3345008}
+  m_Children: []
+  m_Father: {fileID: 1751443726}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &773367265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31118,6 +31153,11 @@ PrefabInstance:
       propertyPath: upFloat
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 2464269211100371275, guid: d6636efc0ae95494faaf69a26ef3492f,
+        type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 1261390761}
     - target: {fileID: 2464269211133245669, guid: d6636efc0ae95494faaf69a26ef3492f,
         type: 3}
       propertyPath: m_Layer
@@ -34049,6 +34089,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1261390760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1261390761}
+  m_Layer: 8
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1261390761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261390760}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -88.2, y: 31.9, z: -1.8076452}
+  m_LocalScale: {x: 3.2280135, y: 3.2280135, z: 3.2280135}
+  m_Children: []
+  m_Father: {fileID: 1147135090}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1263216475
 PrefabInstance:
   m_ObjectHideFlags: 0
