@@ -35,7 +35,7 @@ public class Controls : MonoBehaviour
         {
             SceneManager.LoadScene("Placeholder Level 1");
         }
-        if (health == 0)
+        if (health <= 0)
         {
             transform.position = spawner.position;
             health = 500;
