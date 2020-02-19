@@ -5,6 +5,7 @@ public class FinalGoal: MonoBehaviour
     public TextMeshProUGUI winnertext;
     public Controls P1;
     public Controls P2;
+    public UI timer;
 
     private void OnTriggerEnter2D (Collider2D other)
     {
@@ -15,6 +16,7 @@ public class FinalGoal: MonoBehaviour
             winnertext.text = "Player 1 Wins!";
             P1.cancontrol = false;
             P2.cancontrol = false;
+            timer.counttime = false;
             Destroy(this);
         }
         if (other.gameObject.CompareTag("Player2"))
@@ -23,6 +25,7 @@ public class FinalGoal: MonoBehaviour
             winnertext.text = "Player 2 Wins!";
             P1.cancontrol = false;
             P2.cancontrol = false;
+            timer.counttime = false;
             Destroy(this);
         }
     }

@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6022723}
   - component: {fileID: 6022724}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -816,7 +816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72570382}
   - component: {fileID: 72570383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1218,7 +1218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 111003920}
   - component: {fileID: 111003921}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1305,7 +1305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 150671931}
   - component: {fileID: 150671932}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2110,7 +2110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 228207851}
   - component: {fileID: 228207852}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2486,7 +2486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 254490476}
   - component: {fileID: 254490477}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2721,6 +2721,7 @@ MonoBehaviour:
   winnertext: {fileID: 237320433}
   P1: {fileID: 1147135084}
   P2: {fileID: 1751443721}
+  timer: {fileID: 1532080841}
 --- !u!1001 &293008905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3656,7 +3657,7 @@ PrefabInstance:
     - target: {fileID: 8948140615773090154, guid: 7997b172fb0d7ba4189491a7e09594fb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 100
+      value: 48.7
       objectReference: {fileID: 0}
     - target: {fileID: 8948140615773090154, guid: 7997b172fb0d7ba4189491a7e09594fb,
         type: 3}
@@ -3810,7 +3811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 408216487}
   - component: {fileID: 408216488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5288,6 +5289,11 @@ PrefabInstance:
       propertyPath: P2
       value: 
       objectReference: {fileID: 1751443721}
+    - target: {fileID: 176593564170375877, guid: d62919a9a1dc7454fa6185211e4dd95b,
+        type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1754785007}
     - target: {fileID: 176593564334788843, guid: d62919a9a1dc7454fa6185211e4dd95b,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -7077,7 +7083,7 @@ GameObject:
   m_Component:
   - component: {fileID: 803942494}
   - component: {fileID: 803942495}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7750,7 +7756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 847254483}
   - component: {fileID: 847254484}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7981,7 +7987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 878639103}
   - component: {fileID: 878639104}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8593,7 +8599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 922362498}
   - component: {fileID: 922362499}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9014,7 +9020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 964966694}
   - component: {fileID: 964966695}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9546,7 +9552,7 @@ GameObject:
   - component: {fileID: 1013925889}
   - component: {fileID: 1013925890}
   - component: {fileID: 1013925891}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Basket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9653,7 +9659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1020923840}
   - component: {fileID: 1020923841}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9933,7 +9939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1052728918}
   - component: {fileID: 1052728919}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10826,7 +10832,7 @@ PrefabInstance:
     - target: {fileID: 2464269211759880594, guid: d6636efc0ae95494faaf69a26ef3492f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 99.1
+      value: 47.8
       objectReference: {fileID: 0}
     - target: {fileID: 2464269211759880594, guid: d6636efc0ae95494faaf69a26ef3492f,
         type: 3}
@@ -11020,7 +11026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1161690942}
   - component: {fileID: 1161690943}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11354,7 +11360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1188564211}
   - component: {fileID: 1188564212}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11747,7 +11753,7 @@ PrefabInstance:
     - target: {fileID: 6055990727889793076, guid: dcfcd7a208e74b341a9d67ffb8546d18,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 103.705475
+      value: 52.405483
       objectReference: {fileID: 0}
     - target: {fileID: 6055990727889793076, guid: dcfcd7a208e74b341a9d67ffb8546d18,
         type: 3}
@@ -12331,7 +12337,7 @@ GameObject:
   - component: {fileID: 1287565940}
   - component: {fileID: 1287565941}
   - component: {fileID: 1287565942}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Basket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12681,7 +12687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1304208669}
   - component: {fileID: 1304208670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12767,7 +12773,7 @@ PrefabInstance:
     - target: {fileID: 8841786265841891486, guid: 6f06f6cbd3a3df74cac1fecb253959e8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 103.705475
+      value: 52.405483
       objectReference: {fileID: 0}
     - target: {fileID: 8841786265841891486, guid: 6f06f6cbd3a3df74cac1fecb253959e8,
         type: 3}
@@ -13317,7 +13323,7 @@ PrefabInstance:
     - target: {fileID: 8543594177023284430, guid: 84755dadc2493dc4ba2cac9e13c5529e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 103.705475
+      value: 52.405483
       objectReference: {fileID: 0}
     - target: {fileID: 8543594177023284430, guid: 84755dadc2493dc4ba2cac9e13c5529e,
         type: 3}
@@ -14119,7 +14125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1478292851}
   - component: {fileID: 1478292852}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14433,6 +14439,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2021575609}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1532080841 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 176593564170375877, guid: d62919a9a1dc7454fa6185211e4dd95b,
+    type: 3}
+  m_PrefabInstance: {fileID: 580608806}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b70fc52ccbfdf29448e070a2da04dbc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1549590978
 GameObject:
   m_ObjectHideFlags: 0
@@ -14605,7 +14623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1554458185}
   - component: {fileID: 1554458186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14688,15 +14706,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenBird (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 5711040118267750397, guid: fbe72125994ef7248acac2be63ee600d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5711040118267750398, guid: fbe72125994ef7248acac2be63ee600d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -230.8
+      value: -236.28
       objectReference: {fileID: 0}
     - target: {fileID: 5711040118267750398, guid: fbe72125994ef7248acac2be63ee600d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.3
+      value: -15.5
       objectReference: {fileID: 0}
     - target: {fileID: 5711040118267750398, guid: fbe72125994ef7248acac2be63ee600d,
         type: 3}
@@ -14755,7 +14778,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1562074929}
   - component: {fileID: 1562074930}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15691,6 +15714,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 31.2, y: 31.2}
   m_EdgeRadius: 0
+--- !u!224 &1636303933 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 176593563450775086, guid: d62919a9a1dc7454fa6185211e4dd95b,
+    type: 3}
+  m_PrefabInstance: {fileID: 580608806}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1643640373 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8841786265841891486, guid: 6f06f6cbd3a3df74cac1fecb253959e8,
@@ -15857,7 +15886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1706877784}
   - component: {fileID: 1706877785}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15938,7 +15967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1713507509}
   - component: {fileID: 1713507510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16490,7 +16519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1751326836}
   - component: {fileID: 1751326837}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16711,6 +16740,161 @@ Transform:
   m_Father: {fileID: 1347796407}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1754785006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1754785009}
+  - component: {fileID: 1754785008}
+  - component: {fileID: 1754785007}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1754785007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754785006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 0.00
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281808695
+  m_fontColor: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 72
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 45.3385}
+  m_textInfo:
+    textComponent: {fileID: 1754785007}
+    characterCount: 4
+    spriteCount: 0
+    spaceCount: 0
+    wordCount: 2
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1754785008
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754785006}
+  m_CullTransparentMesh: 0
+--- !u!224 &1754785009
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754785006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1636303933}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 25, y: 422}
+  m_SizeDelta: {x: 342.6, y: 181.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1758522659
 GameObject:
   m_ObjectHideFlags: 0
@@ -17316,7 +17500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1786501422}
   - component: {fileID: 1786501423}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17651,7 +17835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1841552150}
   - component: {fileID: 1841552151}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rope (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18978,7 +19162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1991717857}
   - component: {fileID: 1991717858}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -17,6 +17,9 @@ public class UI : MonoBehaviour
 
     public TextMeshProUGUI introtext;
 
+    public TextMeshProUGUI timer;
+    public bool counttime = false;
+    float timepassing;
 
     private void Awake()
     {
@@ -34,6 +37,7 @@ public class UI : MonoBehaviour
         introtext.gameObject.SetActive(false);
         P1.RaceStart();
         P2.RaceStart();
+        counttime = true;
     }
     void Update()
     {
@@ -41,6 +45,11 @@ public class UI : MonoBehaviour
         P2Health.text = P2.health + "";
         P1Slider.value = P1.health;
         P2Slider.value = P2.health;
+        if (counttime == true)
+        {
+            timepassing += Time.deltaTime;
+            timer.text = "" + Mathf.Round(timepassing * 100)/ 100;
+        }
 
     }
 }
