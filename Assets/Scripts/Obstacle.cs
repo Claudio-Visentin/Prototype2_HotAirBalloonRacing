@@ -6,13 +6,13 @@ public class Obstacle : MonoBehaviour
     {
         if (other.gameObject.CompareTag ("Player1"))
         {
-            other.gameObject.GetComponent<Controls>().maxSpeed -= 5;
-            other.gameObject.GetComponent<Controls>().modifier = 2;
+            other.gameObject.GetComponent<Controls>().maxSpeed -= 15;
+            other.gameObject.GetComponent<Controls>().modifier = 4;
         }
         if (other.gameObject.CompareTag("Player2"))
         {
-            other.gameObject.GetComponent<Controls>().maxSpeed -= 5;
-            other.gameObject.GetComponent<Controls>().modifier = 1;
+            other.gameObject.GetComponent<Controls>().maxSpeed -= 15;
+            other.gameObject.GetComponent<Controls>().modifier = 4;
         }
     }
 
@@ -20,13 +20,13 @@ public class Obstacle : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player1"))
         {
-            other.gameObject.GetComponent<Controls>().maxSpeed += 5;
+            other.gameObject.GetComponent<Controls>().maxSpeed += 15;
             other.gameObject.GetComponent<Controls>().modifier = 2;
         }
         if (other.gameObject.CompareTag("Player2"))
         {
-            other.gameObject.GetComponent<Controls>().maxSpeed += 5;
-            other.gameObject.GetComponent<Controls>().modifier = 1;
+            other.gameObject.GetComponent<Controls>().maxSpeed += 15;
+            other.gameObject.GetComponent<Controls>().modifier = 2;
         }
     }
 
@@ -34,11 +34,11 @@ public class Obstacle : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player1"))
         {
-            other.gameObject.GetComponent<Controls>().health -= 50;
+            other.gameObject.GetComponent<Controls>().health -= 25;
         }
         if (other.gameObject.CompareTag("Player2"))
         {
-            other.gameObject.GetComponent<Controls>().health -= 50;
+            other.gameObject.GetComponent<Controls>().health -= 25;
         }
     }
 }
