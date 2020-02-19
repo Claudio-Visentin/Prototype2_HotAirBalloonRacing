@@ -34,11 +34,11 @@ public class Obstacle : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player1"))
         {
-            other.gameObject.GetComponent<Controls>().health -= 1;
+            other.gameObject.GetComponent<Controls>().health -= 50;
         }
         if (other.gameObject.CompareTag("Player2"))
         {
-            other.gameObject.GetComponent<Controls>().health -= 1;
+            other.gameObject.GetComponent<Controls>().health -= 50;
         }
     }
 }
