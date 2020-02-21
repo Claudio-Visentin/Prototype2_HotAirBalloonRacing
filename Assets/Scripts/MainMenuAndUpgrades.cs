@@ -1,11 +1,19 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
-
+using TMPro;
 public class MainMenuAndUpgrades : MonoBehaviour
 {
     public GameObject MainMenu;
     public GameObject UpgradeMenu;
 
+    public TextMeshProUGUI upgradepointsP1;
+    public TextMeshProUGUI upgradepointsP2;
+
+    public void Update()
+    {
+        upgradepointsP1.text = "Upgrade Points: " + Stats.P1UpgradePoints;
+        upgradepointsP2.text = "Upgrade Points: " + Stats.P2UpgradePoints;
+    }
     public void DayLevel ()
     {
         SceneManager.LoadScene("DayLevel");
@@ -17,8 +25,8 @@ public class MainMenuAndUpgrades : MonoBehaviour
 
     public void OpenUpgrades ()
     {
-        MainMenu.SetActive(true);
-        UpgradeMenu.SetActive(false);
+        MainMenu.SetActive(false);
+        UpgradeMenu.SetActive(true);
     }
     public void CloseUpgrades ()
     {
