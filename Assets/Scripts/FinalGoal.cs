@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
+using System.Collections;
+using UnityEngine.SceneManagement;
 public class FinalGoal: MonoBehaviour
 {
     public TextMeshProUGUI winnertext;
@@ -17,7 +19,7 @@ public class FinalGoal: MonoBehaviour
             P1.cancontrol = false;
             P2.cancontrol = false;
             timer.counttime = false;
-            Destroy(this);
+            Destroy(gameObject.GetComponent <BoxCollider2D> ());          
         }
         if (other.gameObject.CompareTag("Player2"))
         {
@@ -27,7 +29,15 @@ public class FinalGoal: MonoBehaviour
             P1.cancontrol = false;
             P2.cancontrol = false;
             timer.counttime = false;
-            Destroy(this);
+            Destroy(gameObject.GetComponent<BoxCollider2D>());
         }
+        StartCoroutine("GoToMenu");
+    }
+
+    IEnumerator GoToMenu ()
+    {
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("MainMenu");
+
     }
 }
