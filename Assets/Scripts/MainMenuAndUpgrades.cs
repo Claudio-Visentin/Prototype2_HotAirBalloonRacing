@@ -52,7 +52,7 @@ public class MainMenuAndUpgrades : MonoBehaviour
     {
         if (Stats.P1UpgradePoints >= 1)
         {
-            Stats.P1addSpeed += 5;
+            Stats.P1addSpeed += 2;
             Stats.P1UpgradePoints -= 1;
         }
     }
@@ -60,7 +60,7 @@ public class MainMenuAndUpgrades : MonoBehaviour
     {
         if (Stats.P1UpgradePoints >= 1)
         {
-            Stats.P1addAcceleration += 100;
+            Stats.P1addAcceleration += 50;
             Stats.P1UpgradePoints -= 1;
         }
     }
@@ -68,7 +68,7 @@ public class MainMenuAndUpgrades : MonoBehaviour
     {
         if (Stats.P1UpgradePoints >= 1)
         {
-            Stats.P1addUpFloat += 5;
+            Stats.P1addUpFloat += 2;
             Stats.P1UpgradePoints -= 1;
         }
     }
@@ -76,7 +76,7 @@ public class MainMenuAndUpgrades : MonoBehaviour
     {
         if (Stats.P2UpgradePoints >= 1)
         {
-            Stats.P2addSpeed += 5;
+            Stats.P2addSpeed += 2;
             Stats.P2UpgradePoints -= 1;
         }
     }
@@ -84,7 +84,7 @@ public class MainMenuAndUpgrades : MonoBehaviour
     {
         if (Stats.P2UpgradePoints >= 1)
         {
-            Stats.P2addAcceleration += 100;
+            Stats.P2addAcceleration += 50;
             Stats.P2UpgradePoints -= 1;
         }
     }
@@ -92,7 +92,7 @@ public class MainMenuAndUpgrades : MonoBehaviour
     {
         if (Stats.P2UpgradePoints >= 1)
         {
-            Stats.P2addUpFloat += 5;
+            Stats.P2addUpFloat += 2;
             Stats.P2UpgradePoints -= 1;
         }
     }

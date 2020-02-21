@@ -48,7 +48,7 @@ public class Controls : MonoBehaviour
     {
         if (Input.GetKeyDown (KeyCode.Escape))
         {
-            SceneManager.LoadScene("Placeholder Level 1");
+            SceneManager.LoadScene("MainMenu");
         }
         if (health <= 0)
         {
