@@ -5,6 +5,7 @@ public class MainMenuAndUpgrades : MonoBehaviour
 {
     public GameObject MainMenu;
     public GameObject UpgradeMenu;
+    public GameObject PlayMenu;
 
     public TextMeshProUGUI upgradepointsP1;
     public TextMeshProUGUI upgradepointsP2;
@@ -13,6 +14,20 @@ public class MainMenuAndUpgrades : MonoBehaviour
     {
         upgradepointsP1.text = "Upgrade Points: " + Stats.P1UpgradePoints;
         upgradepointsP2.text = "Upgrade Points: " + Stats.P2UpgradePoints;
+    }
+    public void OnPlay ()
+    {
+        MainMenu.SetActive(false);
+        PlayMenu.SetActive(true);
+    }
+    public void ClosePlay ()
+    {
+        PlayMenu.SetActive(false);
+        MainMenu.SetActive(true);
+    }
+    public void OnQuit ()
+    {
+        Application.Quit();
     }
     public void DayLevel ()
     {
