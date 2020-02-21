@@ -29,6 +29,21 @@ public class Controls : MonoBehaviour
         startdone = true;
     }
 
+    public void Awake()
+    {
+        if (player1 == true)
+        {
+            maxSpeed += Stats.P1addSpeed;
+            acceleration += Stats.P1addAcceleration;
+            upFloat += Stats.P1addUpFloat;
+        }
+        if (player2 == true)
+        {
+            maxSpeed += Stats.P2addSpeed;
+            acceleration += Stats.P2addAcceleration;
+            upFloat += Stats.P2addUpFloat;
+        }
+    }
     void Update()
     {
         if (Input.GetKeyDown (KeyCode.Escape))

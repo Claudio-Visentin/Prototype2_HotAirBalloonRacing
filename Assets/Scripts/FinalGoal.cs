@@ -11,7 +11,7 @@ public class FinalGoal: MonoBehaviour
     {
         if (other.gameObject.CompareTag ("Player1"))
         {
-            
+            Stats.P1UpgradePoints += 1;
             winnertext.gameObject.SetActive(true);
             winnertext.text = "Player 1 Wins!";
             P1.cancontrol = false;
@@ -21,6 +21,7 @@ public class FinalGoal: MonoBehaviour
         }
         if (other.gameObject.CompareTag("Player2"))
         {
+            Stats.P2UpgradePoints += 1;
             winnertext.gameObject.SetActive(true);
             winnertext.text = "Player 2 Wins!";
             P1.cancontrol = false;
